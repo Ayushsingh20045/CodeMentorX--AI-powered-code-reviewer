@@ -12,7 +12,7 @@
 
 ## 📌 Overview
 
-CodeMentorX is an AI-powered web application that helps developers, especially beginners, get instant feedback on their code. It uses OpenAI's GPT model to analyze the submitted code and provides:
+CodeMentorX is an AI-powered web application that helps developers, especially beginners, get instant feedback on their code. It uses Google's Gemini model to analyze the submitted code and provides:
 
 - 🔍 Code improvement tips  
 - ⚠️ Mistake and error highlighting  
