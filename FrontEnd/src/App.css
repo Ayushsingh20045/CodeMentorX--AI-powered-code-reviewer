@@ -175,3 +175,9 @@ main .left .reviewbtn:hover {
   color: white;
   background-color: rgb(79, 79, 163);
 }
+@media (prefers-color-scheme: dark) {
+  .review {
+    color: #ffffff;
+    background-color: #121212;
+  }
+}
