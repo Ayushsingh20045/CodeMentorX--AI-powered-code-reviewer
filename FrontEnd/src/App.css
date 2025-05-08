@@ -1,0 +1,177 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body,#root{
+  height: 100%;
+  width: 100%;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  padding:1.1rem;
+  display: flex;
+  gap: 1rem;
+  
+ 
+}
+main .left , main .right{
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+
+}
+
+main .left{
+  background-color: #000;
+  position: relative;
+}
+.left .code , .code pre {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #111;
+}
+
+main .right{
+  background-color: #343434;
+  font-size: 1.2rem;;
+ padding: 1rem 2rem;
+ overflow: auto;
+
+}
+main .left .reviewbtn{
+position: absolute;
+bottom: 1.5rem;
+right: 1.5rem;
+background-color: rgb(168, 168, 251);
+color: #000;
+font-size: 24px;
+font-weight: 600;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 0.5rem 2rem;
+border-radius: 0.7rem;
+cursor: pointer;
+user-select: none;
+}
+.code::selection{
+  color: white;
+  background-color: rgb(79, 79, 163)
+} 
+ */
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 0.8rem;
+  }
+
+  main .left, main .right {
+    flex-basis: 100%;
+    height: 50%;
+  }
+
+  main .left .reviewbtn {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.4rem 1.2rem;
+    font-size: 18px;
+  }
+
+  main .right {
+    padding: 1rem;
+    font-size: 1rem;
+    
+  }
+}
+
+/* Left and Right Panels */
+main .left, main .right {
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+/* LEFT Panel */
+main .left {
+  background-color: #000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 100%;
+}
+
+/* Code Editor Container */
+.left .code {
+  flex: 1;
+  overflow: auto;
+  background-color: #111;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+
+/* Editor internal code block */
+.code pre {
+  margin: 0;
+}
+
+/* RIGHT Panel */
+main .right {
+  background-color: #343434;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  overflow: auto;
+}
+
+/* Review Button */
+main .left .reviewbtn {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: rgb(168, 168, 251);
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+main .left .reviewbtn:hover {
+  background-color: rgb(140, 140, 255);
+}
+
+/* Text selection in code */
+.code::selection {
+  color: white;
+  background-color: rgb(79, 79, 163);
+}
