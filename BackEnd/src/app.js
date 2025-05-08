@@ -6,7 +6,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const allowedOrigins = [
-    process.env.REACT_APP_API_URL,      // From .env (e.g., Render frontend)
+    'https://codementorx-ai-powered-code-reviewer.onrender.com',      // From .env (e.g., Render frontend)
     'http://localhost:5173'             // For local development
   ];
   
