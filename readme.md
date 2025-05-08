@@ -45,9 +45,10 @@ CodeMentorX is an AI-powered web application that helps developers, especially b
 
 ---
 
+
 ## 📸 Screenshots
 
-> _You can add screenshots here if available for UI preview._
+![CodeMentorX](https://github.com/user-attachments/assets/f9e67e50-61fa-44c5-9cf3-68e9c77c158e)
 
 ---
 
@@ -60,5 +61,5 @@ CodeMentorX is an AI-powered web application that helps developers, especially b
 
 ---
 
-## 🧩 Project Structure
+
 
